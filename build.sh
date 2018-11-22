@@ -42,7 +42,7 @@ done
 if test ${target} != "exit"
 then
     meteor build --architecture os.linux.x86_64  ../build/moacnodes_server
-    scp -i ${pem} ../build/moacnodes_server/moacnodes.tar.gz ${target}
+    scp -i ${pem} ../build/moacnodes_server/moacnodes_server.tar.gz ${target}
 fi
 
 echo ${message}
