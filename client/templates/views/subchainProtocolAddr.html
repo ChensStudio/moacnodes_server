@@ -1,0 +1,29 @@
+<!-- <template name="scsPool">
+    {{> reactiveTable settings=settings}}
+</template> -->
+
+<template name = "SubChainProtocolAddrPool">
+  <table class="table table-sm table-hover ">
+    <thead>
+    	<tr>
+    		<th>MicroChain Protocol Address</th>
+    		<th>Min Bond</th>
+    		<th>SCS Count</th>
+            <th>Subchain Protocol Name</th>
+    		<th></th>
+    	</tr>
+    </thead>
+	<tbody>
+    {{#each props}} 
+	 <tr>
+    	<td >{{SubChainProtocolAddr}}</td>
+    	<td>{{bondMin}}</td>
+    	<td>{{scsCount}}</td>
+        <td>{{subChainProtocol}}</td>
+    	<td><button class="btn btn-info" style="font-size: 11px">SCS Detail</button></td>
+	 </tr>
+    {{/each}}
+	</tbody>
+</table>
+</template>
+
