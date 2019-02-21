@@ -8,7 +8,7 @@ do
 case $i in
     -ts|--testServer)
         message="Delivered to TEST Server Side."
-        target="ubuntu@54.202.180.164:/home/ubuntu/newTest/server"
+        target="ubuntu@34.212.127.173:/home/ubuntu/moacnodes/server"
         pem="/Users/ychen/innowells/pem/moacnodes101.pem"
     ;;
     -ps|--prodServer)
